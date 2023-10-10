@@ -1,0 +1,463 @@
+/* Global Variables */
+:root {
+	--bg: #170f11;
+}
+
+/* Universal */
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: var(--bg);
+	font-family: "Inter", "sans-serif";
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Loading */
+#loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	font-family: "Inter", "sans-serif";
+	background-color: var(--bg);
+	color: white;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 12vh;
+	font-family: "Roboto Mono", monospace;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+}
+
+header #branding {
+	position: absolute;
+	top: 4vh;
+	left: 4vw;
+	z-index: -1;
+}
+header #right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+/* Navbar */
+
+#nav-bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav-bar li {
+	display: flex;
+	align-items: center;
+	float: left;
+}
+
+#nav-bar li a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: all 0.3s;
+	letter-spacing: 2px;
+}
+
+#nav-bar li a:hover {
+	opacity: 0.7;
+}
+
+/* Slideshow */
+
+.slideshow-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 70vw;
+	z-index: -1;
+}
+
+.slide-container {
+	display: inline-flex;
+	transition: transform 0.3s ease;
+}
+
+.slide {
+	flex: 100% 100% 100%;
+}
+
+.slide::after {
+	box-shadow: inset 0px 0px 0px 40px var(--bg), inset 0px 0px 10px 10px var(--bg), inset 40px -40px 100px 200px var(--bg);
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.slide img {
+	max-height: 100vh;
+	transition: transform 0.3s ease;
+}
+
+.slideshow-buttons {
+	position: absolute;
+	bottom: 100px;
+	left: calc(50% - 155px);
+	text-align: center;
+}
+
+.slideshow-button {
+	display: inline-block;
+	width: 100px;
+	height: 4px;
+	margin: 0 5px;
+	background-color: #333;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+.active {
+	transition: box-shadow 5s;
+	transition-timing-function: linear;
+	box-shadow: inset 200px 0 0 0 #fff;
+}
+
+/* Information */
+
+#info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35vw;
+	height: 85vh;
+	text-align: left;
+	color: white;
+}
+
+#info h1 {
+	position: absolute;
+	left: 4vw;
+	font-weight: 600;
+	font-size: 20px;
+	width: 23vw;
+	font-family: "Montserrat", sans-serif;
+}
+
+#info p {
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 300;
+	font-family: "Montserrat", "sans-serif";
+}
+
+#info a {
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	transition: all 0.3s;
+}
+
+#info a:hover {
+	opacity: 0.7;
+}
+
+/* Track */
+
+#track {
+	display: flex;
+	justify-content: center;
+	height: 400vh;
+	transition: transform 0.3s ease;
+}
+
+#track #car {
+	transition: transform 0s ease;
+
+	width: 100px;
+	height: 100px;
+}
+
+#particles {
+	position: absolute;
+	top: 100vh;
+	z-index: -1;
+}
+
+#particlesTree {
+	position: absolute;
+	top: 100vh;
+	width: 100vw;
+	height: 400vh;
+	z-index: -2;
+}
+
+#track .mountain {
+	width: 100%;
+	height: 500px;
+}
+
+#splitter {
+	position: absolute;
+	background-color: var(--bg);
+	height: 15vh;
+	width: 100%;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	letter-spacing: 1em;
+}
+
+/* About */
+
+#about {
+	position: absolute;
+	top: 175vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: none;
+	width: 78vw;
+	text-align: center;
+	border-radius: 10px;
+	opacity: 1;
+	z-index: 20;
+}
+
+#about .container {
+	background-color: var(--bg);
+	border: 1px solid white;
+	width: 75vw;
+	text-align: left;
+	border-radius: 10px;
+	opacity: 1;
+	color: white;
+}
+
+#about .entrance {
+	border-radius: 10px;
+	width: 10vw;
+	height: 10vh;
+	position: absolute;
+	top: 0px;
+	left: 34vw;
+	z-index: -1;
+	border: 1px solid white;
+	background-color: var(--bg);
+}
+
+#about .exit {
+	border-radius: 10px;
+	width: 10vw;
+	height: 10vh;
+	position: absolute;
+	bottom: 0;
+	left: 38vw;
+	border: 1px solid white;
+	background-color: var(--bg);
+	z-index: -1;
+}
+
+#about .text {
+	padding-top: 7.5vh;
+	padding-left: 4.5vw;
+	padding-bottom: 7.5vh;
+	width: 35vw;
+}
+
+#about h1 {
+	margin-bottom: 25px;
+}
+
+#about p {
+	font-weight: 300;
+}
+
+#about img {
+	position: absolute;
+	right: 4.5vw;
+	top: 11%;
+	border-radius: 10px;
+	height: 78%;
+	max-width: 25vw;
+	object-fit: cover;
+}
+
+/* Awards */
+
+#awards {
+	position: absolute;
+	top: 290vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: none;
+	width: 78vw;
+	text-align: center;
+	border-radius: 10px;
+	opacity: 1;
+	z-index: 20;
+}
+
+#awards .container {
+	background-color: var(--bg);
+	border: 1px solid white;
+	width: 75vw;
+	text-align: left;
+	border-radius: 10px;
+	opacity: 1;
+	color: white;
+}
+
+#awards .entrance {
+	border-radius: 10px;
+	width: 10vw;
+	height: 10vh;
+	position: absolute;
+	top: 0;
+	left: 32vw;
+	z-index: -1;
+	border: 1px solid white;
+	background-color: var(--bg);
+}
+
+#awards .exit {
+	border-radius: 10px;
+	width: 10vw;
+	height: 10vh;
+	position: absolute;
+	bottom: 0;
+	left: 38vw;
+	border: 1px solid white;
+	background-color: var(--bg);
+	z-index: -1;
+}
+
+#awards .text {
+	padding-top: 7.5vh;
+	padding-left: 4.5vw;
+	padding-bottom: 7.5vh;
+	width: 38vw;
+}
+
+#awards h1 {
+	margin-bottom: 25px;
+}
+
+#awards p {
+	font-weight: 300;
+}
+
+#awards img {
+	position: absolute;
+	right: 4.5vw;
+	top: 11%;
+	border-radius: 10px;
+	height: 78%;
+	max-width: 25vw;
+	object-fit: cover;
+}
+
+#awards table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+
+#awards table td {
+	text-align: center;
+	border-radius: 10px;
+	margin: 100px;
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 200px;
+	transition: all 0.3s;
+}
+
+#awards table td:hover {
+	transform: translateY(-4px);
+}
+
+#awards table td h1 {
+	font-size: 25px;
+}
+
+#awards table td p {
+	font-size: 14px;
+}
+
+#awards table td a {
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	transition: all 0.3s;
+}
+
+#awards table td a:hover {
+	opacity: 0.7;
+}
+
+/* Footer */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100vw;
+	height: 15vh;
+	bottom: -400vh;
+	left: 0;
+	background-color: var(--bg);
+	color: white;
+}
+
+footer h1 {
+	opacity: 0.5;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* Scrollbar CSS - imported code  */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #5c5c5c transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #5c5c5c;
+	border-radius: 0px;
+}

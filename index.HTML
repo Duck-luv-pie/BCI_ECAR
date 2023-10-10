@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bluevale Electric Car Club</title>
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="main.js"></script>
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oxygen:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Loading Div - Element shown while the site is loading -->
+		<div id="loading">
+			<h1>Loading... please wait</h1>
+		</div>
+
+		<!-- Main code -->
+		<div id="main">
+			<header>
+				<!-- Website branding -->
+				<div id="branding">
+					<!-- <img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Crest_of_Bluevale_Collegiate_Institute%2C_Waterloo.gif" alt="Bluevale Electric Car Logo" /> -->
+					<h1>BLUEVALE ECAR</h1>
+				</div>
+				<!-- Navigational utilities -->
+				<div id="right">
+					<ul id="nav-bar">
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#awards">Awards</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+						<li><a href="#donate">Donate</a></li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- Landing element - First items seens when page is loaded -->
+			<div id="landing">
+				<!-- Slideshow -->
+				<div class="slideshow-container">
+					<div class="slide-container">
+						<!-- Slides -->
+						<div class="slide">
+							<img src="https://wallpapercave.com/wp/wp1960202.jpg" alt="Slide 1" />
+						</div>
+						<div class="slide">
+							<img src="https://www.hdcarwallpapers.com/walls/porsche_911_gt3_race_car-HD.jpg" alt="Slide 2" />
+						</div>
+						<div class="slide">
+							<img src="https://images7.alphacoders.com/313/313618.jpg" alt="Slide 3" />
+						</div>
+					</div>
+
+					<!-- Buttons -->
+					<div class="slideshow-buttons">
+						<div class="slideshow-button active"></div>
+						<div class="slideshow-button"></div>
+						<div class="slideshow-button"></div>
+					</div>
+				</div>
+
+				<!-- Information -->
+				<div id="info">
+					<h1>
+						BLUEVALE ELECTRIC CAR CLUB
+						<p>
+							Welcome to the Bluevale Electric Car Club, a champion team based in Waterloo, Ontario competing at the University of Waterloo. With over 40 awards, we're leaders in electric vehicle innovation and sustainability, pushing the boundaries of excellence. Join us in shaping the future of
+							electric mobility – we're electrifying the future, one race at a time! <br /><br />
+							<a href="#about">Learn more about us.</a>
+						</p>
+					</h1>
+				</div>
+			</div>
+			<div id="particlesTree"></div>
+			<canvas id="particles"></canvas>
+
+			<div id="track">
+				<div id="splitter">
+					<h1>START YOUR JOURNEY HERE</h1>
+				</div>
+				<img src="./assets/download.png" alt="Car" id="car" />
+				<div id="about">
+					<div class="container">
+						<div class="text">
+							<div><h1>ABOUT US</h1></div>
+							<div>
+								<p>
+									Welcome to the Bluevale Electric Car Club, where our passion for electric vehicles drives us to not only create but also excel in the realm of sustainable mobility. Based in Waterloo, Ontario and competing at the esteemed University of Waterloo, our journey has been defined by an
+									incredible track record of success and innovation.<br /><br />
+
+									As a team, we specialize in designing, building, and racing electric cars that have not only turned heads but also earned us a place among the elite in the world of competitive engineering. Our commitment to excellence has propelled us to become recurring champions in various
+									competitions, and our trophy cabinet proudly showcases over 40 awards.<br /><br />
+
+									These accolades are not just tokens of achievement; they represent our dedication to pushing the boundaries of electric vehicle technology. Our victories have been hard-fought, our innovations groundbreaking, and our impact on the sustainable transportation landscape profound. From
+									engineering breakthroughs to pioneering aerodynamics, our journey has been defined by a relentless pursuit of innovation.<br /><br />
+
+									At the core of our mission is a deep passion for shaping the future of mobility. We believe that electric vehicles are not just the future; they are the present, and we are leading the charge in making that future cleaner, greener, and more exciting. We invite you to join us on our
+									journey as we continue to break barriers, drive innovation, and inspire change in the world of electric vehicles.<br /><br />
+
+									So, whether you're a fellow enthusiast, a curious onlooker, or someone who shares our vision for a sustainable future, we welcome you to explore our world at the Bluevale Electric Car Club. Together, we are electrifying the future, one race at a time, and the road ahead is full of
+									excitement and possibilities.
+								</p>
+							</div>
+						</div>
+					</div>
+					<img src="https://www.hdcarwallpapers.com/walls/porsche_911_gt3_race_car-HD.jpg" alt="Image" />
+				</div>
+
+				<div id="awards">
+					<div class="container">
+						<!-- <div class="entrance"></div> -->
+						<div class="text">
+							<div><h1>AWARDS</h1></div>
+							<div>
+								<table>
+									<tr>
+										<td>
+											<h1>AWARD #1</h1>
+											<p>Won FIRST place at the 69th iteration of the Waterloo Engineering 12V Race</p>
+											<a href="#"><br />Read More</a>
+										</td>
+										<td>
+											<h1>AWARD #2</h1>
+											<p>Won FIRST place at the 69th iteration of the Waterloo Engineering 12V Race</p>
+											<a href="#"><br />Read More</a>
+										</td>
+										<td>
+											<h1>AWARD #3</h1>
+											<p>Won FIRST place at the 69th iteration of the Waterloo Engineering 12V Race</p>
+											<a href="#"><br />Read More</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h1>AWARD #4</h1>
+											<p>Won FIRST place at the 69th iteration of the Waterloo Engineering 12V Race</p>
+											<a href="#"><br />Read More</a>
+										</td>
+										<td>
+											<h1>AWARD #3</h1>
+											<p>Won FIRST place at the 69th iteration of the Waterloo Engineering 12V Race</p>
+											<a href="#"><br />Read More</a>
+										</td>
+										<td>
+											<h1>SEE MORE</h1>
+											<p>See 40+ more awards...</p>
+											<a href="#"><br />Click Here</a>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- <div class="exit"></div> -->
+					</div>
+					<img src="https://wallpapercave.com/wp/wp1960202.jpg" alt="Image" />
+				</div>
+			</div>
+			<footer>
+				<h1>© Jaskaran S 2023. All Rights Reserved.</h1>
+			</footer>
+		</div>
+		<script type="module">
+			// Import the functions you need from the SDKs you need
+			import {initializeApp} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+			// TODO: Add SDKs for Firebase products that you want to use
+			// https://firebase.google.com/docs/web/setup#available-libraries
+
+			// Your web app's Firebase configuration
+			const firebaseConfig = {
+				apiKey: "AIzaSyB2WEKM46_xcSwQgewV5aA640ZCYOiNWTU",
+				authDomain: "ecar-a33bc.firebaseapp.com",
+				projectId: "ecar-a33bc",
+				storageBucket: "ecar-a33bc.appspot.com",
+				messagingSenderId: "631216058931",
+				appId: "1:631216058931:web:0e92a4ba897ecc55416946",
+			};
+
+			// Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+		</script>
+	</body>
+</html>
